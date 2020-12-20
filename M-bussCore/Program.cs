@@ -69,7 +69,15 @@ namespace M_bussCore
                 //// return y.Deserialize(x.BaseStream);
                 // var r = x.ReadByte();
                 // Console.WriteLine(r);
-                return null; ;
+                if (x.IsOpen)
+                {
+                    byte[] data = new byte[x.BytesToRead];
+                    x.Read(data, 0, data.Length);
+                    var packet = y.Deserialize(data, 0, data.Length);
+                    return packet;
+                }
+                else
+                    return null; ;
                // return null; 
             }, new MeterbusFrameSerializer());
 
