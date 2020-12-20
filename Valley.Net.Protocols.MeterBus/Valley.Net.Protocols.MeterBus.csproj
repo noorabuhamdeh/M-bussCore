@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Martin Dahlstedt</Authors>
+    <Company>Valley</Company>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Valley.Net.Bindings\Valley.Net.Bindings.csproj" />
+  </ItemGroup>
+
+</Project>

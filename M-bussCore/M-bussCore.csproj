@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>M_bussCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Valley.Net.Bindings.Serial\Valley.Net.Bindings.Serial.csproj" />
+    <ProjectReference Include="..\Valley.Net.Protocols.MeterBus\Valley.Net.Protocols.MeterBus.csproj" />
+  </ItemGroup>
+
+</Project>
